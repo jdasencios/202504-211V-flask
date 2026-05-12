@@ -38,12 +38,7 @@ curl -X POST http://127.0.0.1:5000/users \
   -d '{"username":"juan","email":"jdasencios@gmail.com","password":"123456"}'
 ```
 
-Ejemplo de actualización:
 
-```bash
-curl -X PUT http://127.0.0.1:5000/users/1 ^
-  -H "Content-Type: application/json" ^
-  -d "{\"username\":\"juan_updated\",\"email\":\"juan.updated@example.com\",\"password\":\"654321\"}"
 ```
 
 Códigos HTTP usados:
