@@ -12,10 +12,16 @@ SEED_POSTS = [
     ("Segundo post", "Contenido del segundo post"),
 ]
 
+SEED_USERS = [
+    ("admin", "admin@example.com", "admin123"),
+    ("demo", "demo@example.com", "demo123"),
+]
+
 
 def seed_db():
     db = get_db_connection()
     db.executemany("INSERT INTO posts (title, content) VALUES (?, ?)", SEED_POSTS)
+    db.executemany("INSERT INTO users (username, email, password) VALUES (?, ?, ?)", SEED_USERS)
     db.commit()
 
 
