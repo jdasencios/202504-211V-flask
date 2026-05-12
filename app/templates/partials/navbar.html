@@ -1,0 +1,8 @@
+<nav class="navbar navbar-light bg-light px-3">
+    <a class="navbar-brand" href="{{ url_for('base.root') }}">Mi Sitio</a>
+    <div>
+        <a class="btn btn-outline-primary btn-sm" href="{{ url_for('base.home') }}">Home</a>
+        <a class="btn btn-outline-primary btn-sm" href="{{ url_for('post.get_all_posts') }}">Posts</a>
+        <a class="btn btn-outline-primary btn-sm" href="{{ url_for('post.create_post') }}">Create</a>
+    </div>
+</nav>

@@ -1,0 +1,9 @@
+[project]
+name = "202504-211v-flask"
+version = "1.1.0"
+description = "Aplicación Flask reestructurada con separación de rutas, vistas, modelos y utilidades."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "flask>=3.1.3",
+]
